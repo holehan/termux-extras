@@ -1,19 +1,22 @@
 <html>
 
 <head>
-  <title>Termux APT repository</title>
+  <title>Termux APT repository for hugo</title>
 </head>
 
 <body>
-  <h1>Termux APT repository</h1>
+  <h1>Termux APT repository for hugo</h1>
   <p>This apt repository contains
     <a href="https://gohugo.io/">hugo</a> packages for
-    <a href="https://termux.com/">Termux</a> under the
-    <a href="./dists/termux">./dists/termux</a> directory.
+    <a href="https://termux.com/">Termux</a>.
   </p>
   <p>
-    You can access the repo by adding a file at $PREFIX/etc/apt/sources.list.d containing the single line:
-    <pre>deb [trusted=yes] https://holehan.github.io/termux-debs/ termux extras</pre> As the repository is served via https, you may have to first install the apt-transport-https package.
+    You can access the repo by adding a file ending in .list, e.g. holehan.list, at $PREFIX/etc/apt/sources.list.d containing
+    the single line:
+    <pre>deb [trusted=yes] https://termux.holehan.org/ termux extras</pre> As the repository is served via https, you may have to first install the apt-transport-https package. The hugo package
+    comes with bash-completion support and man pages. So you may want to install those packages as well in Termux:
+
+    <pre>apt install bash-completion man</pre>
   </p>
 </body>
 
