@@ -1,0 +1,10 @@
+Package: hugo
+Architecture: arm
+Installed-Size: 23532
+Maintainer: Florian Grässle <termux@holehan.org>
+Version: 0.43
+Description: Configurable static site generator
+Homepage: https://gohugo.io/
+Filename: dists/termux/extras/binary-arm/hugo_0.43_arm.deb
+Size: 5077072
+SHA256: acb27deeb23fde81d50f298c583d72bb70ae4f2b1d1c0707c1d1f6fbaafc71af
