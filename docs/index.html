@@ -11,12 +11,11 @@
     <a href="https://termux.com/">Termux</a>.
   </p>
   <p>
-    You can access the repo by adding a file ending in .list, e.g. holehan.list, at $PREFIX/etc/apt/sources.list.d containing
-    the single line:
-    <pre>deb [trusted=yes] https://termux.holehan.org/ termux extras</pre> As the repository is served via https, you may have to first install the apt-transport-https package. The hugo package
-    comes with bash-completion support and man pages. So you may want to install those packages as well in Termux:
-
-    <pre>apt install bash-completion man</pre>
+    Access the repo by adding a file named holehan.list to $PREFIX/etc/apt/sources.list.d containing
+    the single line: <pre>deb https://termux.holehan.org/ termux extras</pre>Then import the gpg key the repository was signed with:
+    <pre>$ curl https://termux.holehan.org/holehan.key -o holehan.key</pre>
+    <pre>$ apt-key add holehan.key</pre> The hugo package comes with bash-completion support and man pages. So you may want to install those packages as well:
+    <pre>$ pkg install bash-completion man hugo</pre>
   </p>
 </body>
 
