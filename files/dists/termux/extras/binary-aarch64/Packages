@@ -8,3 +8,14 @@ Homepage: https://gohugo.io/
 Filename: dists/termux/extras/binary-aarch64/hugo_0.43_aarch64.deb
 Size: 5108132
 SHA256: 7c15d495503db7e76129b67d5790905e6f9b5fe15586d7b9d3b07df4eda51ec1
+
+Package: hugo
+Architecture: aarch64
+Installed-Size: 27688
+Maintainer: Florian Grässle <termux@holehan.org>
+Version: 0.44
+Description: Configurable static site generator
+Homepage: https://gohugo.io/
+Filename: dists/termux/extras/binary-aarch64/hugo_0.44_aarch64.deb
+Size: 5118860
+SHA256: 9a551c13de9425a8fc6559c8e255ff8fe442e842ff00d430fb965ce668850a59
