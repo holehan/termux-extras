@@ -11,6 +11,8 @@
     <a href="https://termux.com/">Termux</a>.
   </p>
   <p>
+    Make sure you have installed all required packages to manage third party termux apt sources. That would be curl to download the signing key and gnupg to import it
+    <pre>$ pkg install curl gnupg</pre>
     Access the repo by adding a file named holehan.list to $PREFIX/etc/apt/sources.list.d containing
     the single line: <pre>deb https://termux.holehan.org/ termux extras</pre>Then import the gpg key the repository was signed with:
     <pre>$ curl https://termux.holehan.org/holehan.key -o holehan.key</pre>
