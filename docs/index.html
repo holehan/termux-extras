@@ -3311,36 +3311,36 @@ html,body,#wrapper{font-size:10pt!important}
 
 <h3 id="Requirements">Requirements</h3>
 
-<p>Make sure you have installed all required packages to manage extra termux sources. That would be <code>curl</code> to download the signing key and <code>gnupg</code> to import it:</p>
+<p>Make sure you have installed all required packages to get access to the apt repository, namely <code>curl</code> to download the signing key and <code>gnupg</code> to import it:</p>
 
-<pre><code class="bash">$ pkg install curl gnupg</code></pre>
+<pre><code class="bash">pkg install curl gnupg</code></pre>
 
-
-<p></p>
 
 <h3 id="Add-extras-repository-to-Termux">Add extras repository to Termux</h3>
 
-<p>Access the repo by adding a file named e.g. <code>holehan.list to</code> <code>$PREFIX/etc/apt/sources.list.d</code> containing the single line<br/>
-<code>deb https://termux.holehan.org/ termux extras</code>. Then import the gpg key the repository was signed with:</p>
+<p>Access the repo by adding a file named e.g. <code>holehan.list</code> to <code>$PREFIX/etc/apt/sources.list.d</code> containing the single line<br/>
+<code>deb https://termux.holehan.org/ termux extras</code>. Then import the GPG key the repository was signed with. Just follow the steps below:</p>
 
-<pre><code class="bash">$ mkdir -p $PREFIX/etc/apt/sources.list.d
-$ echo &quot;deb https://termux.holehan.org/ termux extras&quot; \
+<pre><code class="bash">mkdir -p $PREFIX/etc/apt/sources.list.d
+echo &quot;deb https://termux.holehan.org/ termux extras&quot; \
 &gt; $PREFIX/etc/apt/sources.list.d/holehan.list
-$ curl https://termux.holehan.org/holehan.key -o holehan.key
-$ apt-key add holehan.key
-$ rm holehan.key</code></pre>
+curl https://termux.holehan.org/holehan.key -o holehan.key
+apt-key add holehan.key
+rm holehan.key # Delete the key after import </code></pre>
 
 
 <h3 id="Install-hugo">Install hugo</h3>
 
-<p>The hugo package comes with bash-completion support and man pages. So you may want to install these packages as well:</p>
+<p>The Hugo package comes with bash-completion support and man pages. So you may want to install these packages as well:</p>
 
-<pre><code class="bash">$ pkg install bash-completion man hugo</code></pre>
+<pre><code class="bash">pkg install bash-completion man hugo</code></pre>
 
 
-<h3 id="Build-it-yourself">Build it yourself</h3>
+<p>You won&rsquo;t be able to use the <code>hugo</code> bash-completion until you start a new Termux session. Now impress your friends and have fun again building great websites with Hugo and Termux!</p>
 
-<p>The scripts to build the packages <a href="https://github.com/holehan/termux-packages">can be found at my fork</a> of the <a href="https://github.com/termux/termux-packages">official termux repository</a>. Find the hugo build script at <a href="https://github.com/holehan/termux-packages/tree/master/packages/hugo">https://github.com/holehan/termux-packages/tree/master/packages/hugo</a></p>
+<h3 id="Alternative%3A-Build-it-yourself">Alternative: Build it yourself</h3>
+
+<p>The scripts to build the packages <a href="https://github.com/holehan/termux-packages">can be found at my fork</a> of the <a href="https://github.com/termux/termux-packages">official termux repository</a>. Find the Hugo build script at <a href="https://github.com/holehan/termux-packages/tree/master/packages/hugo">https://github.com/holehan/termux-packages/tree/master/packages/hugo</a></p>
 <!-- ##END MARKED WRAPPER## -->
     </div>
 
