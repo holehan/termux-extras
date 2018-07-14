@@ -4,33 +4,36 @@ This apt repository contains [Hugo](https://gohugo.io/) packages for [Termux](ht
 
 ### Requirements
 
-Make sure you have installed all required packages to manage extra termux sources. That would be `curl` to download the signing key and `gnupg` to import it:
+Make sure you have installed all required packages to get access to the apt repository, namely `curl` to download the signing key and `gnupg` to import it:
 
 ```bash
-$ pkg install curl gnupg
+pkg install curl gnupg
 ```
+
 ### Add extras repository to Termux
 
-Access the repo by adding a file named e.g. `holehan.list to` `$PREFIX/etc/apt/sources.list.d` containing the single line
-`deb https://termux.holehan.org/ termux extras`. Then import the gpg key the repository was signed with:
+Access the repo by adding a file named e.g. `holehan.list` to `$PREFIX/etc/apt/sources.list.d` containing the single line
+`deb https://termux.holehan.org/ termux extras`. Then import the GPG key the repository was signed with. Just follow the steps below:
 
 ```bash
-$ mkdir -p $PREFIX/etc/apt/sources.list.d
-$ echo "deb https://termux.holehan.org/ termux extras" \
+mkdir -p $PREFIX/etc/apt/sources.list.d
+echo "deb https://termux.holehan.org/ termux extras" \
 > $PREFIX/etc/apt/sources.list.d/holehan.list
-$ curl https://termux.holehan.org/holehan.key -o holehan.key
-$ apt-key add holehan.key
-$ rm holehan.key
+curl https://termux.holehan.org/holehan.key -o holehan.key
+apt-key add holehan.key
+rm holehan.key # Delete the key after import 
 ```
 
 ### Install hugo
 
-The hugo package comes with bash-completion support and man pages. So you may want to install these packages as well:
+The Hugo package comes with bash-completion support and man pages. So you may want to install these packages as well:
 
 ```bash
-$ pkg install bash-completion man hugo
+pkg install bash-completion man hugo
 ```
 
-### Build it yourself
+You won't be able to use the `hugo` bash-completion until you start a new Termux session. Now impress your friends and have fun again building great websites with Hugo and Termux!
 
-The scripts to build the packages [can be found at my fork](https://github.com/holehan/termux-packages) of the [official termux repository](https://github.com/termux/termux-packages). Find the hugo build script at https://github.com/holehan/termux-packages/tree/master/packages/hugo
+### Alternative: Build it yourself
+
+The scripts to build the packages [can be found at my fork](https://github.com/holehan/termux-packages) of the [official termux repository](https://github.com/termux/termux-packages). Find the Hugo build script at https://github.com/holehan/termux-packages/tree/master/packages/hugo
