@@ -36,4 +36,4 @@ You won't be able to use the `hugo` bash-completion until you start a new Termux
 
 ### Alternative: Build it yourself
 
-The scripts to build the packages [can be found at my fork](https://github.com/holehan/termux-packages) of the [official termux repository](https://github.com/termux/termux-packages). Find the Hugo build script at https://github.com/holehan/termux-packages/tree/master/packages/hugo
+The scripts to build the packages [can be found at my fork](https://github.com/holehan/termux-packages) of the [official termux repository](https://github.com/termux/termux-packages). Find the Hugo build script at <https://github.com/holehan/termux-packages/tree/master/packages/hugo>
