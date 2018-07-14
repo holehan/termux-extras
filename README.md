@@ -15,6 +15,9 @@ Access the repo by adding a file named holehan.list to `$PREFIX/etc/apt/sources.
 `deb https://termux.holehan.org/ termux extras`. Then import the gpg key the repository was signed with:
 
 ```bash
+$ mkdir -p $PREFIX/etc/apt/sources.list.d
+$ echo "deb https://termux.holehan.org/ termux extras" \
+> $PREFIX/etc/apt/sources.list.d/holehan.list
 $ curl https://termux.holehan.org/holehan.key -o holehan.key
 $ apt-key add holehan.key
 ```
@@ -26,3 +29,7 @@ The hugo package comes with bash-completion support and man pages. So you may wa
 ```bash
 $ pkg install bash-completion man hugo
 ```
+
+### Build it yourself
+
+The scripts to build the packages [can be found at my fork](https://github.com/holehan/termux-packages) of the [official termux repository](https://github.com/termux/termux-packages). Find the hugo build script at https://github.com/holehan/termux-packages/tree/master/packages/hugo
