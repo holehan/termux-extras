@@ -1,6 +1,9 @@
-# Termux APT repository for Hugo
+# Termux APT repository for Hugo and sift
 
-This apt repository contains [Hugo](https://gohugo.io/) packages for [Termux](https://termux.com/). Hugo is a fast and flexible Static Site Generator written in Go. More packages like [sift](https://github.com/svent/sift) might be added to this repository at a later time.
+This apt repository contains extra packages for [Termux](https://termux.com/), an Android terminal emulator and Linux environment app. The included packages are:
+
+- [Hugo](https://gohugo.io/), a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)).
+- [Sift](https://github.com/svent/sift), a fast and powerful alternative to grep ([Github](https://github.com/svent/sift/)).
 
 ### Requirements
 
@@ -24,7 +27,9 @@ apt-key add holehan.key
 rm holehan.key # Delete the key after import 
 ```
 
-### Install hugo
+### Installing packages
+
+#### Hugo
 
 The Hugo package comes with bash-completion support and man pages. So you may want to install these packages as well:
 
@@ -33,6 +38,14 @@ pkg install bash-completion man hugo
 ```
 
 You won't be able to use the `hugo` bash-completion until you start a new Termux session. Now impress your friends and have fun again building great websites with Hugo and Termux!
+
+#### Sift
+
+Sift offers bash-completion support, too. Make sure to install it if you haven't done so already:
+
+```bash
+pkg install bash-completion sift
+```
 
 ### Alternative: Build it yourself
 
