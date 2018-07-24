@@ -1,0 +1,48 @@
+$primary: hsl(48, 100%, 67%);
+
+@import "bulma.sass";
+
+{{ $terminal := resources.Get "images/terminal.svg" | minify | fingerprint }}
+
+.header--icon {
+  height: 8rem;
+  width: 7rem;
+  background-image: url({{ $terminal.RelPermalink }});
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+  @media (min-width: 1088px) {
+    float: left;
+    height: 6rem;
+    width: 7rem;
+  }
+}
+
+{{ $github := resources.Get "images/github-alt.svg" | minify | fingerprint }}
+
+.octicon {
+  padding-left: 20px;
+  background-image: url({{ $github.RelPermalink }});
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hugologo {
+  font-weight: bold;
+}
+
+.hugologo--red {
+  color:#ed4c85;
+}
+
+.hugologo--blue {
+  color:#2e96ca
+}
+
+.hugologo--green {
+  color:#58b996
+}
+
+.hugologo--yellow {
+  color:#ebbb55
+}

@@ -1,0 +1,47 @@
+{
+  "name": "termux.holehan.org",
+  "version": "0.1.0",
+  "description": "Termux extra packages",
+  "main": "index.js",
+  "repository": "git@github.com:holehan/termux-extras.git",
+  "author": "Florian Grässle <git@holehan.org>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 8.11.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "hugo --gc",
+    "clean": "del-cli 'docs/*' '!docs/dists' '!docs/files' '!docs/CNAME' '!docs/holehan.key' 'resources/*'",
+    "publish": "hugo && gulp purgecss && gulp srihash && gulp htmlclean",
+    "watch": "hugo server"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.0.1",
+    "bulma": "^0.7.1",
+    "gulp": "^3.9.1",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-purgecss": "^1.0.0",
+    "gulp-sri-hash": "^2.0.0",
+    "postcss-cli": "^6.0.0",
+    "pump": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "del-cli": "^1.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.1",
+    "prettier": "^1.12.1",
+    "stylelint": "^9.2.0",
+    "stylelint-config-idiomatic-order": "^5.0.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-selector-bem-pattern": "^2.0.0"
+  }
+}

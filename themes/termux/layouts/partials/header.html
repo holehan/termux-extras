@@ -1,0 +1,10 @@
+<header class="hero is-small is-primary">
+  <div class="hero-body container">
+    <div class="header--icon"></div>
+      <h1 class="title is-1 has-text-centered-touch is-size-3-mobile has-text-dark">{{ .Site.Title }}</h1>
+      {{ range where .Site.Pages "Type" "index" }}
+      <h2 class="subtitle is-4 has-text-centered-touch is-size-5-mobile has-text-grey-dark">{{ .Title }}</h2>
+      {{ end }}
+    </div>
+  </div>
+</header>

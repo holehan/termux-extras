@@ -1,0 +1,13 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Termux Extra Packages"
+theme = "termux"
+pygmentsCodeFences = true
+publishDir = "docs"
+
+backgroundColor = "black"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[outputs]
+home = ["HTML"]

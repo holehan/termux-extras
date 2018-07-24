@@ -1,0 +1,15 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>{{ .Site.Title }}</title>
+  {{ if .Site.IsServer }}
+  {{ $cssOpts := (dict "enableSourceMap" true "includePaths" (slice "node_modules/bulma")) }}
+  {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS $cssOpts }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  {{ else }}
+  {{ $cssOpts := (dict "enableSourceMap" false "includePaths" (slice "node_modules/bulma")) }}
+  {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS $cssOpts | postCSS | minify | fingerprint }}
+  {{/* <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen"> */}}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+  {{ end }}
+</head>

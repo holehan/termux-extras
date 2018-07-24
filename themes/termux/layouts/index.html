@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    {{ range where .Site.Pages "Type" "index" }}
+    <article class="content">
+      {{ .Content }}
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
