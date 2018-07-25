@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "hugo --gc",
     "clean": "del-cli 'docs/*' '!docs/dists' '!docs/files' '!docs/CNAME' '!docs/holehan.key' 'resources/*'",
-    "publish": "hugo && gulp purgecss && gulp srihash && gulp htmlclean",
+    "publish": "npm run clean && hugo && gulp purgecss && gulp srihash && gulp htmlclean",
     "watch": "hugo server"
   },
   "dependencies": {
