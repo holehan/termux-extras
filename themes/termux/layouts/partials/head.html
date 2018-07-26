@@ -4,7 +4,7 @@
   <title>{{ .Site.Title }}</title>
   {{ $terminal := resources.Get "images/terminal.svg" | minify | fingerprint }}
   <link rel="preload" href="{{ $terminal.RelPermalink }}" as="image">
-  {{ if .Site.IsServer }}
+  {{ if eq (getenv "HUGO_ENV") "development" }}
   {{ $cssOpts := (dict "enableSourceMap" true "includePaths" (slice "node_modules/bulma")) }}
   {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS $cssOpts }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">

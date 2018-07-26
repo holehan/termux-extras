@@ -19,7 +19,7 @@
     "publish_old": "npm run clean && hugo && gulp purgecss && gulp srihash && gulp htmlclean",
     "publish": "npm run clean && hugo && htmlclean -i docs -o docs",
     "favicon": "cd themes/termux/ && real-favicon generate faviconDescription.json faviconData.json static && real-favicon inject faviconData.json layouts/partials/ layouts/partials/head.html",
-    "watch": "hugo server"
+    "watch": "HUGO_ENV=development hugo server"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.0.1",
