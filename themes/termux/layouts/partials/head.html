@@ -2,6 +2,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <title>{{ .Site.Title }}</title>
+  {{ $terminal := resources.Get "images/terminal.svg" | minify | fingerprint }}
+  <link rel="preload" href="{{ $terminal.RelPermalink }}" as="image">
   {{ if .Site.IsServer }}
   {{ $cssOpts := (dict "enableSourceMap" true "includePaths" (slice "node_modules/bulma")) }}
   {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS $cssOpts }}
