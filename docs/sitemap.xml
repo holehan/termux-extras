@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/content/</loc>
+    <loc>https://termux.holehan.org/content/</loc>
     <lastmod>2018-07-23T16:28:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://termux.holehan.org/</loc>
     <priority>0</priority>
   </url>
   
