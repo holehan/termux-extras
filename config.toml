@@ -1,11 +1,13 @@
-baseURL = "http://example.org/"
+baseURL = "https://termux.holehan.org"
 languageCode = "en-us"
 title = "Termux Extra Packages"
 theme = "termux"
-pygmentsCodeFences = true
 publishDir = "docs"
 
-backgroundColor = "black"
+enableRobotsTXT = true
+
+pygmentsCodeFences = true
+pygmentsStyle = "paraiso-dark"
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
