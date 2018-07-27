@@ -22,12 +22,8 @@
     "watch": "HUGO_ENV=development hugo server"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^1.0.1",
-    "autoprefixer": "^9.0.1",
     "babel-eslint": "^8.2.3",
-    "bulma": "^0.7.1",
     "cli-real-favicon": "^0.0.6",
-    "del-cli": "^1.1.0",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -37,12 +33,18 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.8.1",
-    "htmlclean-cli": "^1.0.9",
-    "postcss-cli": "^6.0.0",
     "prettier": "^1.12.1",
     "stylelint": "^9.2.0",
     "stylelint-config-idiomatic-order": "^5.0.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-selector-bem-pattern": "^2.0.0"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.0.1",
+    "autoprefixer": "^9.0.1",
+    "bulma": "^0.7.1",
+    "del-cli": "^1.1.0",
+    "htmlclean-cli": "^1.0.9",
+    "postcss-cli": "^6.0.0"
   }
 }
