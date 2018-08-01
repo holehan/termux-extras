@@ -1,13 +1,13 @@
 Package: hugo
 Architecture: i686
-Installed-Size: 23852
+Installed-Size: 24012
 Maintainer: Florian Grässle <termux@holehan.org>
-Version: 0.45.1
+Version: 0.46
 Description: Configurable static site generator
 Homepage: https://gohugo.io/
-Filename: dists/termux/extras/binary-i686/hugo_0.45.1_i686.deb
-Size: 5749180
-SHA256: 1978d223685da3a32e9be51750d0b83576fcd73683feb355d3594fb66ee55a8a
+Filename: dists/termux/extras/binary-i686/hugo_0.46_i686.deb
+Size: 5773456
+SHA256: a37cc7d9085dcd675501a951d9e71e9275398face44585b0b0e6ee9fa177299c
 
 Package: sift
 Architecture: i686
