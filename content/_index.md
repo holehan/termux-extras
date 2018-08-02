@@ -1,5 +1,5 @@
 ---
-title: "an APT repository for Hugo and sift"
+title: 'an APT repository for Hugo and sift'
 date: 2018-07-23T16:28:45+02:00
 type: index
 ---
@@ -8,8 +8,8 @@ type: index
 
 This apt repository contains extra packages for [Termux](https://termux.com/), an Android terminal emulator and Linux environment app. The included packages are:
 
-- [Hugo](https://gohugo.io/), a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)).
-- [Sift](https://github.com/svent/sift), a fast and powerful alternative to grep ([Github](https://github.com/svent/sift/)).
+- [Hugo](https://gohugo.io/) 0.46, a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)),
+- [Sift](https://sift-tool.org) 0.9.0, a fast and powerful alternative to grep ([Github](https://github.com/svent/sift/)).
 
 ### Requirements
 
@@ -21,7 +21,7 @@ pkg install curl gnupg
 
 ### Add extras repository to Termux
 
-Access the repo by adding a file named e.g. `holehan.list` to `$PREFIX/etc/apt/sources.list.d` containing the single line
+Access the repo by adding a file named `holehan.list` to `$PREFIX/etc/apt/sources.list.d` containing the single line
 `deb https://termux.holehan.org/ termux extras`. Then import the GPG key the repository was signed with. Just follow the steps below:
 
 ```bash
@@ -55,4 +55,4 @@ pkg install bash-completion sift
 
 ### Alternative: Build it yourself
 
-The scripts to build the packages [can be found at my fork](https://github.com/holehan/termux-packages) of the [official termux repository](https://github.com/termux/termux-packages). Find the Hugo build script at <https://github.com/holehan/termux-packages/tree/master/packages/hugo>
+The scripts to build the packages [can be found at this fork](https://github.com/holehan/termux-packages) of the [official termux repository](https://github.com/termux/termux-packages). Find the Hugo build script at <https://github.com/holehan/termux-packages/tree/master/packages/hugo>.
