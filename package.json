@@ -1,6 +1,6 @@
 {
   "name": "termux.holehan.org",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Termux extra packages",
   "main": "index.js",
   "repository": "git@github.com:holehan/termux-extras.git",
@@ -33,6 +33,7 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.8.1",
     "prettier": "^1.12.1",
+    "prettier-stylelint": "^0.4.2",
     "stylelint": "^9.2.0",
     "stylelint-config-idiomatic-order": "^5.0.0",
     "stylelint-config-standard": "^18.2.0",
