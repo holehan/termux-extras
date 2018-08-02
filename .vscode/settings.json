@@ -1,5 +1,6 @@
 {
   "files.associations": {
-    "*.html": "gohtml"
+    "*.html": "gohtml",
+    "_resources.scss": "gotemplate"
   }
 }
