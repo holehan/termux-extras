@@ -1,28 +1,23 @@
 $primary: hsl(48, 100%, 67%);
 
-@import "bulma.sass";
-
-{{ $terminal := resources.Get "images/terminal.svg" | minify | fingerprint }}
+@import 'bulma.sass';
 
 .header--icon {
-  height: 8rem;
   width: 7rem;
-  background-image: url({{ $terminal.RelPermalink }});
+  height: 8rem;
+  margin: auto;
+  background-image: url($terminal);
   background-repeat: no-repeat;
   background-size: contain;
-  margin: auto;
   @media (min-width: 1088px) {
-    float: left;
     height: 6rem;
-    width: 7rem;
+    float: left;
   }
 }
 
-{{ $github := resources.Get "images/github-alt.svg" | minify | fingerprint }}
-
 .octicon {
   padding-left: 20px;
-  background-image: url({{ $github.RelPermalink }});
+  background-image: url($github);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -31,18 +26,18 @@ $primary: hsl(48, 100%, 67%);
   font-weight: bold;
 }
 
-.hugologo--red {
-  color:#ed4c85;
+.hugoLogo--red {
+  color: #ed4c85;
 }
 
 .hugologo--blue {
-  color:#2e96ca
+  color: #2e96ca;
 }
 
 .hugologo--green {
-  color:#58b996
+  color: #58b996;
 }
 
 .hugologo--yellow {
-  color:#ebbb55
+  color: #ebbb55;
 }

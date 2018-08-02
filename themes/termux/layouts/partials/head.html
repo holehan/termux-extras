@@ -6,11 +6,15 @@
   <link rel="preload" href="{{ $terminal.RelPermalink }}" as="image">
   {{ if eq (getenv "HUGO_ENV") "development" }}
   {{ $cssOpts := (dict "enableSourceMap" true "includePaths" (slice "node_modules/bulma")) }}
-  {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS $cssOpts }}
+  {{ $scssVars := resources.Get "scss/_resources.scss" | resources.ExecuteAsTemplate "scss/_resources.scss" . }}
+  {{ $scssMain := resources.Get "scss/main.scss" }}
+  {{ $styles := slice $scssVars $scssMain | resources.Concat "/scss/main.scss" | toCSS $cssOpts }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
   {{ else }}
   {{ $cssOpts := (dict "enableSourceMap" false "includePaths" (slice "node_modules/bulma")) }}
-  {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | toCSS $cssOpts | postCSS | minify | fingerprint }}
+  {{ $scssVars := resources.Get "scss/_resources.scss" | resources.ExecuteAsTemplate "scss/_resources.scss" . }}
+  {{ $scssMain := resources.Get "scss/main.scss" }}
+  {{ $styles := slice $scssVars $scssMain | resources.Concat "/scss/main.scss" | toCSS $cssOpts | postCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
   {{ end }}
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
