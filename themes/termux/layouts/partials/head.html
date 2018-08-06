@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="{{ .Description }}">
   <title>{{ .Site.Title }}</title>
   {{ $terminal := resources.Get "images/terminal.svg" | minify | fingerprint }}
   <link rel="preload" href="{{ $terminal.RelPermalink }}" as="image">
