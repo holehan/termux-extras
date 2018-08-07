@@ -1,10 +1,9 @@
 <header class="hero is-small is-primary">
   <div class="hero-body container">
-    <div class="header--icon"></div>
-      <h1 class="title is-1 has-text-centered-touch is-size-3-mobile has-text-dark">{{ .Site.Title }}</h1>
-      {{ range where .Site.Pages "Type" "index" }}
-      <h2 class="subtitle is-4 has-text-centered-touch is-size-5-mobile has-text-grey-dark">{{ .Title }}</h2>
-      {{ end }}
-    </div>
+    <svg class="header--icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="m0 2v28h32v-28zm30 26h-28v-24h28zm-2-22h-24v20h24zm-14 10h-2v2h-2v2h-2v-2h2v-2h2v-2h-2v-2h-2v-2h2v2h2v2h2zm8 4h-6v-2h6z"/></svg>
+    <h1 class="title is-1 has-text-centered-touch is-size-3-mobile has-text-dark">{{ .Site.Title }}</h1>
+    {{ range where .Site.Pages "Type" "index" }}
+    <h2 class="subtitle is-4 has-text-centered-touch is-size-5-mobile has-text-grey-dark">{{ .Title }}</h2>
+    {{ end }}
   </div>
 </header>

@@ -3,21 +3,23 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="description" content="{{ .Description }}">
   <title>{{ .Site.Title }}</title>
-  {{ $terminal := resources.Get "images/terminal.svg" | minify | fingerprint }}
+  {{/* {{ $terminal := resources.Get "images/terminal.svg" | minify | fingerprint }}
   <link rel="preload" href="{{ $terminal.RelPermalink }}" as="image">
   {{ $github := resources.Get "images/github-alt.svg" | minify | fingerprint }}
-  <link rel="preload" href="{{ $github.RelPermalink }}" as="image">
+  <link rel="preload" href="{{ $github.RelPermalink }}" as="image"> */}}
   {{ if eq (getenv "HUGO_ENV") "development" }}
   {{ $cssOpts := (dict "enableSourceMap" true "includePaths" (slice "node_modules/bulma")) }}
-  {{ $scssVars := resources.Get "scss/_resources.scss" | resources.ExecuteAsTemplate "/tmp/_resources.scss" . }}
-  {{ $scssMain := resources.Get "scss/main.scss" }}
-  {{ $styles := slice $scssVars $scssMain | resources.Concat "/styles/main.scss" | toCSS $cssOpts }}
+  {{/* $scssVars := resources.Get "scss/_resources.scss" | resources.ExecuteAsTemplate "/tmp/_resources.scss" . */}}
+  {{$scssMain := resources.Get "scss/main.scss"}}
+  {{/* $styles := slice $scssVars $scssMain | resources.Concat "/styles/main.scss" | toCSS $cssOpts */}}
+  {{ $styles := slice $scssMain | resources.Concat "/styles/main.scss" | toCSS $cssOpts }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
   {{ else }}
   {{ $cssOpts := (dict "enableSourceMap" false "includePaths" (slice "node_modules/bulma")) }}
-  {{ $scssVars := resources.Get "scss/_resources.scss" | resources.ExecuteAsTemplate "/tmp/_resources.scss" . }}
+  {{/* $scssVars := resources.Get "scss/_resources.scss" | resources.ExecuteAsTemplate "/tmp/_resources.scss" . */}}
   {{ $scssMain := resources.Get "scss/main.scss" }}
-  {{ $styles := slice $scssVars $scssMain | resources.Concat "/styles/main.scss" | toCSS $cssOpts | postCSS | minify | fingerprint }}
+  {{/* $styles := slice $scssVars $scssMain | resources.Concat "/styles/main.scss" | toCSS $cssOpts | postCSS | minify | fingerprint */}}
+  {{ $styles := slice $scssMain | resources.Concat "/styles/main.scss" | toCSS $cssOpts | postCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
   {{ end }}
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
