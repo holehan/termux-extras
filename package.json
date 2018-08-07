@@ -16,9 +16,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "hugo --gc",
     "clean": "del-cli 'docs/*' '!docs/dists' '!docs/files' '!docs/CNAME' '!docs/holehan.key' 'resources/*'",
-    "publish": "npm run clean && hugo && htmlclean -i docs -o docs",
+    "publish": "npm run clean && hugo --gc && htmlclean -i docs -o docs",
     "favicon": "cd themes/termux/ && real-favicon generate faviconDescription.json faviconData.json static && real-favicon inject faviconData.json layouts/partials/ layouts/partials/head.html",
     "watch": "HUGO_ENV=development hugo server"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.0.1",
+    "autoprefixer": "^9.0.1",
+    "bulma": "^0.7.1",
+    "del-cli": "^1.1.0",
+    "htmlclean-cli": "^1.0.9",
+    "postcss-cli": "^6.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
@@ -38,13 +46,5 @@
     "stylelint-config-idiomatic-order": "^5.0.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-selector-bem-pattern": "^2.0.0"
-  },
-  "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.0.1",
-    "autoprefixer": "^9.0.1",
-    "bulma": "^0.7.1",
-    "del-cli": "^1.1.0",
-    "htmlclean-cli": "^1.0.9",
-    "postcss-cli": "^6.0.0"
   }
 }
