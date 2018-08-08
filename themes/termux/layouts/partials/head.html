@@ -19,8 +19,10 @@
   {{/* $scssVars := resources.Get "scss/_resources.scss" | resources.ExecuteAsTemplate "/tmp/_resources.scss" . */}}
   {{ $scssMain := resources.Get "scss/main.scss" }}
   {{/* $styles := slice $scssVars $scssMain | resources.Concat "/styles/main.scss" | toCSS $cssOpts | postCSS | minify | fingerprint */}}
-  {{ $styles := slice $scssMain | resources.Concat "/styles/main.scss" | toCSS $cssOpts | postCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+  {{ with slice $scssMain | resources.Concat "/styles/main.scss" | toCSS $cssOpts | postCSS | minify | fingerprint }}
+  <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
+  {{/* <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen"> */}}
   {{ end }}
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
