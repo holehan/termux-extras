@@ -1,13 +1,24 @@
 Package: hugo
 Architecture: x86_64
-Installed-Size: 27704
+Installed-Size: 27568
 Maintainer: Florian Grässle <termux@holehan.org>
-Version: 0.46
+Version: 0.44
 Description: Configurable static site generator
 Homepage: https://gohugo.io/
-Filename: dists/termux/extras/binary-x86_64/hugo_0.46_x86_64.deb
-Size: 5745608
-SHA256: 3f0b2661090ed87fc6ebc2cd20c58cb90505337c283171bb493d482a1998b0d7
+Filename: dists/termux/extras/binary-x86_64/hugo_0.44_x86_64.deb
+Size: 5739244
+SHA256: 5fd98ac9639c4dd080fc573d73c8b941313e54ab41cfc1d01c63b44042c3f9a0
+
+Package: hugo
+Architecture: x86_64
+Installed-Size: 27816
+Maintainer: Florian Grässle <termux@holehan.org>
+Version: 0.47
+Description: Configurable static site generator
+Homepage: https://gohugo.io/
+Filename: dists/termux/extras/binary-x86_64/hugo_0.47_x86_64.deb
+Size: 5778236
+SHA256: 0ffaecb74c38bcc0810dd7b675a91950ec10b2c4ee17dd9e8db1bb7578574070
 
 Package: sift
 Architecture: x86_64
@@ -17,5 +28,5 @@ Version: 0.9.0
 Description: A fast and powerful alternative to grep
 Homepage: https://sift-tool.org/
 Filename: dists/termux/extras/binary-x86_64/sift_0.9.0_x86_64.deb
-Size: 1008920
-SHA256: 7d725d4b755264e8cfd2f97666975d5c3ae1572d83abb0d2242f1829748177b4
+Size: 1008256
+SHA256: a6532c417ad6467527002b925c4bfc1c110f6a71bce3ccebb942930f039612aa
