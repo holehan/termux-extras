@@ -13,12 +13,12 @@ Package: hugo
 Architecture: aarch64
 Installed-Size: 27976
 Maintainer: Florian Grässle <termux@holehan.org>
-Version: 0.47
+Version: 0.47.1
 Description: Configurable static site generator
 Homepage: https://gohugo.io/
-Filename: dists/termux/extras/binary-aarch64/hugo_0.47_aarch64.deb
-Size: 5152320
-SHA256: 86bb0737cdabe041701f3ab6526da25917d7e33c7e3b5fcc520071f1b2abfb36
+Filename: dists/termux/extras/binary-aarch64/hugo_0.47.1_aarch64.deb
+Size: 5150772
+SHA256: 8fa583494e5c32c9e1192a32addddcabe6560ea0ffec9f58ef4379c15464f7c9
 
 Package: sift
 Architecture: aarch64
@@ -28,5 +28,5 @@ Version: 0.9.0
 Description: A fast and powerful alternative to grep
 Homepage: https://sift-tool.org/
 Filename: dists/termux/extras/binary-aarch64/sift_0.9.0_aarch64.deb
-Size: 895512
-SHA256: c3c7aab8a89ed0d9132e6ad4d32f480fb2dd39b71fd947562c0584552a65498f
+Size: 895100
+SHA256: 4753a606555ec01b7e8fc07fa32a8b58603a7393e4fab954a3e5c1d5b136acc7
