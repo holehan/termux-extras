@@ -2,14 +2,15 @@
 title: 'an APT repository for Hugo and sift'
 date: 2018-07-23T16:28:45+02:00
 type: index
-description: 'Termux extra packages including Hugo and sift. Run Hugo on Android and impress your friends.'
+description:
+  'Termux extra packages including Hugo and sift. Run Hugo on Android and impress your friends.'
 ---
 
 ### About
 
 This apt repository contains extra packages for [Termux](https://termux.com/), an Android terminal emulator and Linux environment app. The included packages are:
 
-- [Hugo](https://gohugo.io/) v0.44/extended, v0.47.1/extended, a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)),
+- [Hugo](https://gohugo.io/) v0.47.1/extended, a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)),
 - [Sift](https://sift-tool.org) 0.9.0, a fast and powerful alternative to grep ([Github](https://github.com/svent/sift/)).
 
 ### Requirements
@@ -44,11 +45,18 @@ The Hugo package comes with bash-completion support and man pages. So you may wa
 pkg install bash-completion man hugo
 ```
 
-You won't be able to use the `hugo` bash-completion until you start a new Termux session. Now impress your friends and have fun again building great websites with Hugo and Termux!
+Notes:
+
+- You won't be able to use the `hugo` bash-completion until you start a new Termux session.
+- If you want to use [Hugo Pipes with postcss](http://gohugo.io/hugo-pipes/postcss/), you'll have to adapt the postcss-cli [shebang to Termux's private space](https://wiki.termux.com/wiki/Termux-fix-shebang) first. Repeat this step on each postcss update:
+
+```bash
+termux-fix-shebang node_modules/postcss-cli/bin/postcss
+```
 
 #### Sift
 
-Sift offers bash-completion support, too. Make sure to install it if you haven't done so already:
+Sift offers bash-completion support, too.
 
 ```bash
 pkg install bash-completion sift
