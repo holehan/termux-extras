@@ -18,6 +18,7 @@
     "clean": "del-cli 'docs/*' '!docs/dists' '!docs/files' '!docs/CNAME' '!docs/holehan.key' 'resources/*'",
     "publish": "npm run clean && hugo --gc --minify",
     "favicon": "cd themes/termux/ && real-favicon generate faviconDescription.json faviconData.json static && real-favicon inject faviconData.json layouts/partials/ layouts/partials/head.html",
+    "preview": "hugo server",
     "watch": "HUGO_ENV=development hugo server"
   },
   "dependencies": {
