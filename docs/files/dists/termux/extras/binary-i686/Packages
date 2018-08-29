@@ -6,8 +6,8 @@ Version: 0.48
 Description: Configurable static site generator
 Homepage: https://gohugo.io/
 Filename: dists/termux/extras/binary-i686/hugo_0.48_i686.deb
-Size: 6637156
-SHA256: af06019413bad14f230b679b391ebec05ff571b2d26fb2edc50a1bfcff8a0285
+Size: 6636752
+SHA256: 7274d6b53e88b652b86bed43388c02ac99adef822bf72f15b99daf2de050204e
 
 Package: sift
 Architecture: i686

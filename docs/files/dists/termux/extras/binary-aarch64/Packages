@@ -6,8 +6,8 @@ Version: 0.48
 Description: Configurable static site generator
 Homepage: https://gohugo.io/
 Filename: dists/termux/extras/binary-aarch64/hugo_0.48_aarch64.deb
-Size: 5895536
-SHA256: 656603ba4af0c176be2a6f64c17e0c0dfe4a62974c5cef135b24cb9896d4bd51
+Size: 5907644
+SHA256: 87eb73efa626b9f824493549929b9c8da663d758e11c653066f035691690e39b
 
 Package: sift
 Architecture: aarch64

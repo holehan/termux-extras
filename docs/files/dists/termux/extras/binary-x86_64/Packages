@@ -6,8 +6,8 @@ Version: 0.48
 Description: Configurable static site generator
 Homepage: https://gohugo.io/
 Filename: dists/termux/extras/binary-x86_64/hugo_0.48_x86_64.deb
-Size: 6734520
-SHA256: 283f7fc49e241a23b1cdf1e53264205f0332d8c934c11e78920a1c0041151559
+Size: 6735020
+SHA256: a054b6dfb1b0875e67d0d63c5dd200056132fcb8106d5de235e8afcd0512c218
 
 Package: sift
 Architecture: x86_64
