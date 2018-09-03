@@ -1,0 +1,41 @@
+.header--icon {
+  display: block;
+  width: 7rem;
+  height: 8rem;
+  margin: auto;
+  @media (min-width: 1088px) {
+    height: 6rem;
+    float: left;
+  }
+}
+
+.github {
+  display: flex;
+  align-items: center;
+}
+
+.github--icon {
+  width: 19px;
+  height: 18px;
+  margin-right: 1px;
+}
+
+.hugologo {
+  font-weight: bold;
+}
+
+.hugologo--red {
+  color: #ed4c85;
+}
+
+.hugologo--blue {
+  color: #2e96ca;
+}
+
+.hugologo--green {
+  color: #58b996;
+}
+
+.hugologo--yellow {
+  color: #ebbb55;
+}
