@@ -1,5 +1,0 @@
-{{ $terminal := resources.Get "images/terminal.svg" | minify | fingerprint }}
-$terminal: '{{ $terminal.RelPermalink }}';
-
-{{ $github := resources.Get "images/github-alt.svg" | minify | fingerprint }}
-$github: '{{$github.RelPermalink}}';
