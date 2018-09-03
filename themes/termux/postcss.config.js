@@ -1,6 +1,6 @@
 module.exports = {
-  plugins: [
-    require('@fullhuman/postcss-purgecss')({
+  plugins: {
+    '@fullhuman/postcss-purgecss': {
       content: ['themes/termux/layouts/**/*.html'],
       whitelist: [
         'highlight',
@@ -13,7 +13,8 @@ module.exports = {
         'ul',
         'li'
       ]
-    }),
-    require('autoprefixer')
-  ]
+    },
+    autoprefixer: {},
+    cssnano: { preset: 'default' }
+  }
 };

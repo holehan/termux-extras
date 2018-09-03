@@ -10,13 +10,13 @@
     "node": ">= 8.11.3"
   },
   "browserslist": [
-    "last 2 versions"
+    ">1%"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "hugo --gc --minify",
     "clean": "del-cli 'docs/*' '!docs/dists' '!docs/files' '!docs/CNAME' '!docs/holehan.key' 'resources/*'",
-    "publish": "npm run clean && hugo --gc --minify",
+    "publish": "npm run clean && hugo --minify",
     "favicon": "cd themes/termux/ && real-favicon generate faviconDescription.json faviconData.json static && real-favicon inject faviconData.json layouts/partials/ layouts/partials/head.html",
     "preview": "hugo server",
     "watch": "HUGO_ENV=development hugo server"
@@ -25,6 +25,7 @@
     "@fullhuman/postcss-purgecss": "^1.0.1",
     "autoprefixer": "^9.0.1",
     "bulma": "^0.7.1",
+    "cssnano": "^4.1.0",
     "del-cli": "^1.1.0",
     "postcss-cli": "^6.0.0"
   },
