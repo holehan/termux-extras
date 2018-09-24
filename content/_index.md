@@ -2,8 +2,7 @@
 title: 'an APT repository for Hugo and sift'
 date: 2018-07-23T16:28:45+02:00
 type: index
-description:
-  'Termux extra packages including Hugo and sift. Run Hugo on Android and impress your friends.'
+description: 'Termux extra packages including Hugo and sift. Run Hugo on Android and impress your friends.'
 ---
 
 ### About
@@ -60,6 +59,12 @@ Sift offers bash-completion support, too.
 
 ```bash
 pkg install bash-completion sift
+```
+
+### Upgrading packages
+
+```bash
+pkg upgrade
 ```
 
 ### Alternative: Build it yourself
