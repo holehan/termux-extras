@@ -10,7 +10,7 @@ description:
 
 This apt repository contains extra packages for [Termux](https://termux.com/), an Android terminal emulator and Linux environment app. The included packages are:
 
-- [Hugo](https://gohugo.io/) v0.48/extended, a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)),
+- [Hugo](https://gohugo.io/) v0.49/extended, a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)),
 - [Sift](https://sift-tool.org) 0.9.0, a fast and powerful alternative to grep ([Github](https://github.com/svent/sift/)).
 
 ### Requirements
