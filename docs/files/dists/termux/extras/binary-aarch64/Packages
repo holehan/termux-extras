@@ -2,12 +2,12 @@ Package: hugo
 Architecture: aarch64
 Installed-Size: 29600
 Maintainer: Florian Grässle <hallo@holehan.org>
-Version: 0.49.1
+Version: 0.49.2
 Description: Configurable static site generator
 Homepage: https://gohugo.io/
-Filename: dists/termux/extras/binary-aarch64/hugo_0.49.1_aarch64.deb
-Size: 5933780
-SHA256: f0b6c10165037752ce13549e097bbc1e724fd55a328fc30f81ac111f1159350e
+Filename: dists/termux/extras/binary-aarch64/hugo_0.49.2_aarch64.deb
+Size: 5934460
+SHA256: bdffe516ca1e0b7d54492e388fb27c30265cd68a84d725f21de9fb1c8bb66f40
 
 Package: sift
 Architecture: aarch64
