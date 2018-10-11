@@ -54,6 +54,12 @@ Sift offers bash-completion support, too. Make sure to install it if you haven't
 pkg install bash-completion sift
 ```
 
+### Upgrading packages
+
+```bash
+pkg upgrade
+```
+
 ### Alternative: Build it yourself
 
 The scripts to build the packages [can be found at my fork](https://github.com/holehan/termux-packages) of the [official termux repository](https://github.com/termux/termux-packages). Find the Hugo build script at <https://github.com/holehan/termux-packages/tree/master/packages/hugo>
