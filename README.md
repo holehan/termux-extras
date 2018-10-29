@@ -2,7 +2,7 @@
 
 This apt repository contains extra packages for [Termux](https://termux.com/), an Android terminal emulator and Linux environment app. The included packages are:
 
-- [Hugo](https://gohugo.io/) v0.49.2/extended, a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)),
+- [Hugo](https://gohugo.io/) v0.50/extended, a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)),
 - [Sift](https://sift-tool.org) 0.9.0, a fast and powerful alternative to grep ([Github](https://github.com/svent/sift/)).
 
 ### Requirements
@@ -24,7 +24,7 @@ echo "deb https://termux.holehan.org/ termux extras" \
 > $PREFIX/etc/apt/sources.list.d/holehan.list
 curl https://termux.holehan.org/holehan.key -o holehan.key
 apt-key add holehan.key
-rm holehan.key # Delete the key after import 
+rm holehan.key # Delete the key after import
 ```
 
 ### Installing packages
