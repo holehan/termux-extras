@@ -1,15 +1,15 @@
 Codename: termux
 Version: 1
-Architectures: i686 aarch64 arm x86_64
+Architectures: x86_64 arm i686 aarch64
 Description: Extras repository
 Suite: termux
-Date: Wed, 07 Nov 2018 14:06:17 UTC
+Date: Wed, 28 Nov 2018 15:19:52 UTC
 SHA256:
- ff9a49158047af1c71a3cd42e9b8573daf97b4d61731e6449e12d7b41c508e86 697 extras/binary-i686/Packages
- 82429853957f983a71a1dd50c3fea90b79579248957087553101d7fb1a6cb699 480 extras/binary-i686/Packages.xz
- 4f8f234b69d76b4e8b93f1fe61fa65b3b58e3fc422da9d83696745154be93705 715 extras/binary-aarch64/Packages
- d60726d20ee1359ff35bc3af840dccd7bcd2aa24d3743a5c8193f04139d30536 476 extras/binary-aarch64/Packages.xz
- 03e1886397e18387b0dbd1af5d89195cb7c26a7e460c5281f0e668865e2675d2 691 extras/binary-arm/Packages
- e7355dfd6eb654f09d1f7d6ce85e37edd897e7b2decb6a5615d6d16be1b1d12d 476 extras/binary-arm/Packages.xz
- c1847f904d9a3c6da236bfb9d6e69dad7f62ff75639eeec4329e2244b3d1364f 710 extras/binary-x86_64/Packages
- c564791787dc0e8f89d8f04ea6624543189cb675ef129ed82a2c6b2400d1e68e 480 extras/binary-x86_64/Packages.xz
+ 58ce1d4b65f62c4bc5b3831a13f357fc89adc18663058f40a3f0ed65e964b27f 710 extras/binary-x86_64/Packages
+ ee047aef59d379108a085c623b754ced94ca9fc938ef18f2a4c95c3a3e70339b 480 extras/binary-x86_64/Packages.xz
+ 8dae07895bc319bd13f01238c70faa72d48512f487720d51763cf0773205c3ac 691 extras/binary-arm/Packages
+ 4c889988046af9669e786ad1c09dcf75f2f127c462b90c6240f52b09f5265439 480 extras/binary-arm/Packages.xz
+ 57b786689671cdf2cacdd55c1c64e549ebe8636caab0ba4e8889a7246b26fba7 697 extras/binary-i686/Packages
+ 63418c960663ca095a73cd1a137e4a4d2ff841e716f31511123996ea684c6e53 476 extras/binary-i686/Packages.xz
+ 6862aa767da033ab049592164e01742bc87c16fe67b8a4c175699b1bcca4aefa 715 extras/binary-aarch64/Packages
+ ae114f1fb959d6e597b952282de4aba65c12e7a25aba46e8e04229b05fb62105 476 extras/binary-aarch64/Packages.xz
