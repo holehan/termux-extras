@@ -1,9 +1,16 @@
 # Termux APT repository for Hugo and sift
 
-This apt repository contains extra packages for [Termux](https://termux.com/), an Android terminal emulator and Linux environment app. The included packages are:
+This apt repository contains extra packages for [Termux](https://termux.com/), an Android terminal emulator and Linux environment app.
 
-- [Hugo](https://gohugo.io/) v0.53/extended, a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)),
+#### Current packages
+
 - [Sift](https://sift-tool.org) 0.9.0, a fast and powerful alternative to grep ([Github](https://github.com/svent/sift/)).
+
+#### Former packages
+
+The following packages have been removed from the repository. This usually happens once they can be found in the official termux packages repository.
+
+- [Hugo](https://gohugo.io/) v0.53/extended, a fast and flexible Static Site Generator written in Go ([Github](https://github.com/gohugoio/hugo)). _Hugo is now part of the official termux packages repository_! 🎉
 
 ### Requirements
 
@@ -15,7 +22,7 @@ pkg install curl gnupg
 
 ### Add extras repository to Termux
 
-Access the repo by adding a file named e.g. `holehan.list` to `$PREFIX/etc/apt/sources.list.d` containing the single line
+Access the repo by adding a file named `holehan.list` to `$PREFIX/etc/apt/sources.list.d` containing the single line
 `deb https://termux.holehan.org/ termux extras`. Then import the GPG key the repository was signed with. Just follow the steps below:
 
 ```bash
@@ -48,7 +55,7 @@ termux-fix-shebang node_modules/postcss-cli/bin/postcss
 
 #### Sift
 
-Sift offers bash-completion support, too. Make sure to install it if you haven't done so already:
+Sift offers bash-completion support, too.
 
 ```bash
 pkg install bash-completion sift
@@ -60,6 +67,23 @@ pkg install bash-completion sift
 pkg upgrade
 ```
 
+### Remove extras repository from Termux
+
+Remove the extras repository from Termux by
+
+- Uninstalling its packages with `pkg uninstall PACKAGE_NAME`,
+- removing its entry from the packages sources list
+
+```bash
+rm $PREFIX/etc/apt/sources.list.d/holehan.list
+```
+
+- removing the signing key
+
+```bash
+apt-key del C9681FDF7AEBD90F
+```
+
 ### Alternative: Build it yourself
 
-The scripts to build the packages [can be found at my fork](https://github.com/holehan/termux-packages) of the [official termux repository](https://github.com/termux/termux-packages). Find the Hugo build script at <https://github.com/holehan/termux-packages/tree/master/packages/hugo>
+The scripts to build the packages [can be found at this fork](https://github.com/holehan/termux-packages) of the [official termux repository](https://github.com/termux/termux-packages). Find the Hugo build script at <https://github.com/holehan/termux-packages/tree/master/packages/hugo>.
