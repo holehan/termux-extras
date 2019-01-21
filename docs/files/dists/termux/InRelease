@@ -1,0 +1,34 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Codename: termux
+Version: 1
+Architectures: aarch64 i686 arm x86_64
+Description: Extras repository
+Suite: termux
+Date: Mon, 21 Jan 2019 10:29:46 UTC
+SHA256:
+ 1f43c168101d52a7a08f2120038c0bb38df083a77cfe12e64e7a95d001958b67 362 extras/binary-aarch64/Packages
+ e7d6fe4ed8ccaa184dbbe29e898db4790ef12332db88729dff18401f4eb41b3d 356 extras/binary-aarch64/Packages.xz
+ 968379042411c7af1d0eb7dada8ee7aea6d7cae98cd593394b748b3e8dd44a42 353 extras/binary-i686/Packages
+ ce895c47319c7d257e56e2219c2972e5852831efa267fde50bb481765524c7e2 356 extras/binary-i686/Packages.xz
+ 199957c887303a31f4b3aef755ce255d550a115751b6b0a2d7f176cbadab0025 350 extras/binary-arm/Packages
+ a7952277f0fc0abfbf29f52bc8bebf64078076b1f342c417a970480718d6575e 352 extras/binary-arm/Packages.xz
+ 297a90fbca317015c95e1baae21cd056d7524901e425484e322c6a62e9fe6946 360 extras/binary-x86_64/Packages
+ 34ca53d3bdb423de5678db675bafeadaf971f9752489a7d1844a99651ab99c55 360 extras/binary-x86_64/Packages.xz
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEYGtFVieIpncacq18yWgf33rr2Q8FAlxFo5EACgkQyWgf33rr
+2Q879hAAmV4p94aFjHw3bIx9uDY5Ct6jKl/uyAlE4lHblVmHkq9Z5MXWBU8E7E+l
+IrkMfqQ7Z9XcDaAj2bSFfJB5dnOaD6tJplyL9609c8pJMSpXDQtbhAF1l56Jq17c
+OcXl99yexxZ4zOqV81CX0tmHldYBknwZS0U+Z6jD/ywnhVbwqBG7N5xGMKP3D4TJ
+w6MnGdJpaMKTXxtMXcEPJRd5wTmPVUOzJLAqyQOtqJcFDM5r0gbNXf/77wBnoZv9
+qq81GZ7LIYvrTSI+bQIRMJUReBGFAPuo/1OOVR7qcKek2RKH5EWlBK4EnGIzx4di
+ymNAyLPUIGr/wIxZWn3ZMorqbe6zWTqWtOH7OdhRTfsMG69kNnooiH0KnUMLgNCK
+1Z8fFr99+IlBbnYob/AuD4Z3Blg8X/2AC6CIkCkNDd8yhysWz4fvKFDpRxity1eb
+knpgd/ZUyUf+TNqMUq8titS1O9il7BNxrz6RL2HR1J7hPznZ2NwOxR2QbBll/k17
+vgaSo5ZHhAyygQSapY1Qva9aPVMThKc6gKqPBLgP18vH5K13HEPUn2vnGLwji9nl
+RXeG0ZIyLaYm70mf5iH0wx5TYzNmm5PrulX8RTqL/WvOPGrlOgwx43NvbReIBm6M
+bx8RTC5yEln8J2JpvaBwQK4XlGSreSr/sD1V/hSl1/W8G461Ng8=
+=Ghdn
+-----END PGP SIGNATURE-----
