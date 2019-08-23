@@ -24,7 +24,7 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.0.1",
     "autoprefixer": "^9.0.1",
-    "bulma": "^0.7.1",
+    "bulma": "0.7.1",
     "cssnano": "^4.1.0",
     "del-cli": "^1.1.0",
     "postcss-cli": "^6.0.0"
