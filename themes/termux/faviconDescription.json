@@ -30,7 +30,7 @@
     },
     "androidChrome": {
       "pictureAspect": "noChange",
-      "themeColor": "#ffffff",
+      "themeColor": "#FFDD57",
       "manifest": {
         "name": "Termux Extras",
         "display": "browser",
